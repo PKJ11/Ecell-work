@@ -55,6 +55,18 @@ export const SidebarData = [
     icon: UilChart,
     heading: 'Content Marketing'
   },
+  {
+    icon: UilChart,
+    heading: 'Employment News'
+  }, 
+  {
+    icon: UilChart,
+    heading: 'DPD Journal Sales'
+  }, 
+  {
+    icon: UilChart,
+    heading: 'Connectors'
+  },
 ];
 
 // Analytics Cards Data
