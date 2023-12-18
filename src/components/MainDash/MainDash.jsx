@@ -4,10 +4,12 @@ import Table from "../Table/Table";
 import "./MainDash.css";
 const MainDash = () => {
   return (
-    <div className="MainDash">
-      <h1>Dashboard</h1>
+    <div>
+      <h1 className="navbar">Budget and Prioritization</h1>
+      <div className="MainDash">
       <Cards />
       <Table />
+    </div>
     </div>
   );
 };
