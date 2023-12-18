@@ -22,50 +22,47 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Home",
+    navigate: "/"
   },
   {
     icon: UilClipboardAlt,
     heading: "All Products",
+    navigate: "/AllProducts"
   },
   {
     icon: UilUsersAlt,
     heading: "All Users",
+    navigate: "/AllUsers"
   },
   {
     icon: UilPackage,
-    heading: 'Budget and Prioritization'
+    heading: 'Budget and Prioritization',
+    navigate: "/"
   },
   {
     icon: UilChart,
-    heading: 'SEO Prototype'
+    heading: 'SEO Prototype',
+    navigate: "/"
   },
   {
     icon: UilChart,
-    heading: 'E-Mail Marketing'
+    heading: 'E-Mail Marketing',
+    navigate: "/"
   }, 
   {
     icon: UilChart,
-    heading: 'E-Commerce Manager'
+    heading: 'E-Commerce Manager',
+    navigate: "/"
   }, 
   {
     icon: UilChart,
-    heading: 'Advertising'
+    heading: 'Advertising',
+    navigate: "/Advertising"
   }, 
   {
     icon: UilChart,
-    heading: 'Content Marketing'
-  },
-  {
-    icon: UilChart,
-    heading: 'Employment News'
-  }, 
-  {
-    icon: UilChart,
-    heading: 'DPD Journal Sales'
-  }, 
-  {
-    icon: UilChart,
-    heading: 'Connectors'
+    heading: 'Content Marketing',
+    navigate: "/"
   },
 ];
 

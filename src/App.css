@@ -32,7 +32,7 @@
   height: 100%;
   width: 100%;
   background: var(--glass);
-  grid-template-columns: 11rem auto 0rem;
+  grid-template-columns: 11rem auto 20rem;
   overflow: hidden;
 }
 
