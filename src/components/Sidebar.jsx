@@ -47,9 +47,10 @@ const Sidebar = ({heading,setheading}) => {
                 setSelected(index);
               }}
             ><Link to={`/${index+1}`} style={{textDecoration:"none",color:"inherit"}}>
-            <item.icon className={selected === index ? "icon" : ""}/>
-            <span className={selected === index ? "text" : ""}>{item.heading}</span>
-            </Link></div>
+            <item.icon className={selected === index ? "icon" : ""} style={{padding:"0px 4px"}} />
+            <span className={selected === index ? "text" : ""} >{item.heading}</span>
+            </Link>
+            </div>
           );
         })}
        

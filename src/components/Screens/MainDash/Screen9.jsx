@@ -1,7 +1,7 @@
 import React from "react";
-import Table from "../Table/Table";
+import Table from "../../Table/Table";
 import "./MainDash.css";
-const MainDash = ({heading,setheading}) => {
+const Screen9 = ({heading,setheading}) => {
   return (
     <div>
       <h1 className="navbar">{heading}</h1>
@@ -12,4 +12,5 @@ const MainDash = ({heading,setheading}) => {
   );
 };
 
-export default MainDash;
+export default Screen9
+;

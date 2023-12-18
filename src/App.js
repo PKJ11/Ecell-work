@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './App.css'
-import MainDash from './components/MainDash/MainDash';
+import MainDash from './components/Screens/MainDash/Screen9';
 
 import Sidebar from './components/Sidebar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Screen9 from './components/Screens/Screen9';
+import Screen9 from './components/Screens/MainDash/Screen9.jsx';
 
 function App() {
 
