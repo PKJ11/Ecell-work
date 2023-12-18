@@ -19,7 +19,6 @@ const Sidebar = () => {
     }
   }
   console.log(window.innerWidth)
-  console.log(process.env.REACT_APP_BASE_URL)
   return (
     <>
       <div className="bars" style={expanded ? { left: '60%' } : { left: '5%' }} onClick={() => setExpaned(!expanded)}>
@@ -41,7 +40,13 @@ const Sidebar = () => {
             <div
               className={selected === index ? 'menuItem active' : 'menuItem'}
               key={index}
-              onClick={()=>navigate('/AllProducts')}
+
+              onClick={() => {
+                const navigatelink = `${item.navigate}`
+                navigate('/')
+                navigate(navigatelink) ;
+                console.log(navigatelink); 
+              }}
             >
               <item.icon className={selected === index ? 'icon' : ''} />
               <span className={selected === index ? 'text' : ''}>{item.heading}</span>

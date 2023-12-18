@@ -1,9 +1,10 @@
 import React from 'react'
+import Sidebar from '../../components/Sidebar'
 
 const Advertising = () => {
   return (
     <div>
-      Advertising
+      <Sidebar/>
     </div>
   )
 }

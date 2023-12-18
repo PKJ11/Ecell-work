@@ -32,7 +32,7 @@ export const SidebarData = [
   {
     icon: UilUsersAlt,
     heading: "All Users",
-    navigate: "AllUsers"
+    navigate: "/AllUsers"
   },
   {
     icon: UilPackage,
@@ -57,7 +57,7 @@ export const SidebarData = [
   {
     icon: UilChart,
     heading: 'Advertising',
-    navigate: "/"
+    navigate: "/Advertising"
   }, 
   {
     icon: UilChart,
