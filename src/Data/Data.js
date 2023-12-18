@@ -62,7 +62,7 @@ export const SidebarData = [
   {
     icon: UilChart,
     heading: 'Content Marketing',
-    navigate: "/"
+    navigate: "/ContentMarketing"
   },
 ];
 

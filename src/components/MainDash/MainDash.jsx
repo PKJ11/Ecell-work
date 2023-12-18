@@ -4,11 +4,8 @@ import React from "react";
 import "./MainDash.css";
 const MainDash = (props) => {
   return (
-    <div>
-      <h1 className="navbar">Home</h1>
-      <div className="head">
-        <h1 className="home-head">Real-Time Statistics</h1>
-      </div>
+    <div className="MainDash">
+      <h1 className="navbar">{props.heading}</h1>
     </div>
   );
 };
