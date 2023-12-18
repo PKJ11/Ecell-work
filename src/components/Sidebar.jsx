@@ -5,7 +5,7 @@ import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 
-const Sidebar = () => {
+const Sidebar = ({heading,setheading}) => {
   const [selected, setSelected] = useState(0);
 
   const [expanded, setExpaned] = useState(true)
@@ -41,7 +41,10 @@ const Sidebar = () => {
             <div
               className={selected === index ? "menuItem active" : "menuItem"}
               key={index}
-              onClick={() => setSelected(index)}
+              onClick={() =>{
+                setheading(SidebarData[index].heading);
+                setSelected(index);
+              }}
             >
               <item.icon className={selected === index ? "icon" : ""}/>
               <span className={selected === index ? "text" : ""}>{item.heading}</span>

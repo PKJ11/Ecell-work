@@ -1,10 +1,10 @@
 import React from "react";
 import Table from "../Table/Table";
 import "./MainDash.css";
-const MainDash = () => {
+const MainDash = ({heading,setheading}) => {
   return (
     <div>
-      <h1 className="navbar">Budget and Prioritization</h1>
+      <h1 className="navbar">{heading}</h1>
       <div className="MainDash">
       <Table />
     </div>
