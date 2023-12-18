@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="AppGlass">
         <Sidebar/>
-        <MainDash/>
+        <MainDash heading="Home"/>
         {/* <RightSide/> */}
       </div>
   )
