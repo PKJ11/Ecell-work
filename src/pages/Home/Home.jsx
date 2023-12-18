@@ -35,7 +35,7 @@ const Home = () => {
               transition: "right 0.3s ease",
             }}
             onClick={toggleCalendar}
-            className="flex"
+            className="grid"
           >
             <span>C</span>
             <span>A</span>
