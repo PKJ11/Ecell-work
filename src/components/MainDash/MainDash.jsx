@@ -1,15 +1,14 @@
 import React from "react";
-import Cards from "../Cards/Cards";
-import Table from "../Table/Table";
+// import Cards from "../Cards/Cards";
+// import Table from "../Table/Table";
 import "./MainDash.css";
 const MainDash = () => {
   return (
     <div>
-      <h1 className="navbar">Budget and Prioritization</h1>
-      <div className="MainDash">
-      <Cards />
-      <Table />
-    </div>
+      <h1 className="navbar">Home</h1>
+      <div className="head">
+        <h1 className="home-head">Real-Time Statistics</h1>
+      </div>
     </div>
   );
 };
