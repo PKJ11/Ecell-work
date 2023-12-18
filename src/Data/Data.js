@@ -21,23 +21,39 @@ import img3 from "../imgs/img3.png";
 export const SidebarData = [
   {
     icon: UilEstate,
-    heading: "Dashboard",
+    heading: "Home",
   },
   {
     icon: UilClipboardAlt,
-    heading: "Orders",
+    heading: "All Products",
   },
   {
     icon: UilUsersAlt,
-    heading: "Customers",
+    heading: "All Users",
   },
   {
     icon: UilPackage,
-    heading: 'Products'
+    heading: 'Budget and Prioritization'
   },
   {
     icon: UilChart,
-    heading: 'Analytics'
+    heading: 'SEO Prototype'
+  },
+  {
+    icon: UilChart,
+    heading: 'E-Mail Marketing'
+  }, 
+  {
+    icon: UilChart,
+    heading: 'E-Commerce Manager'
+  }, 
+  {
+    icon: UilChart,
+    heading: 'Advertising'
+  }, 
+  {
+    icon: UilChart,
+    heading: 'Content Marketing'
   },
 ];
 
