@@ -1,21 +1,39 @@
-import React from "react";
-import CustomerReview from "../CustomerReview/CustomerReview";
-import Updates from "../Updates/Updates";
+import { useState } from "react";
+import Calendar from "react-calendar";
 import "./RightSide.css";
 
-const RightSide = () => {
+function RightSide() {
+  const [date, setDate] = useState(new Date());
+
   return (
-    <div className="RightSide">
-      <div>
-        <h3>Updates</h3>
-        <Updates />
+    <div className="app">
+      <div className="calendar-container">
+        <Calendar onChange={setDate} value={date} />
       </div>
-      <div>
-        <h3>Customer Review</h3>
-        <CustomerReview />
+      <div className="background flex">
+        <div>
+          <input type="checkbox" />
+          <label>Day 1</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label>Day 2</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label>Day 3</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label>Day 4</label>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label>Day 5</label>
+        </div>
       </div>
     </div>
   );
-};
+}
 
 export default RightSide;
