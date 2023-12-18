@@ -1,14 +1,12 @@
-import React from 'react'
-import Sidebar from '../../components/Sidebar'
-import MainDash from '../../components/MainDash/MainDash'
+import React from "react";
+import Sidebar from "../../components/Sidebar";
 
 const AllUsers = () => {
   return (
-    <div className="AppGlass">
-      <Sidebar/>
-      <MainDash heading="All Users "></MainDash>
+    <div>
+      <Sidebar />
     </div>
-  )
-}
+  );
+};
 
-export default AllUsers
+export default AllUsers;
