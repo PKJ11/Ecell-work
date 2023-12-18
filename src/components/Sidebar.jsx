@@ -30,9 +30,8 @@ const Sidebar = () => {
     >
       {/* logo */}
       <div className="logo">
-        <img src={Logo} alt="logo" />
         <span>
-          Sh<span>o</span>ps
+          DPD Marketing and Analytics Tool
         </span>
       </div>
 
