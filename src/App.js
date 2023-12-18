@@ -3,18 +3,26 @@ import './App.css'
 import MainDash from './components/MainDash/MainDash';
 
 import Sidebar from './components/Sidebar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Screen9 from './components/Screens/Screen9';
 
 function App() {
 
  const [heading,setheading] = useState("Home");
 
   return (
+    <BrowserRouter>
     <div className="App">
       <div className="AppGlass">
         <Sidebar heading={heading} setheading={setheading}/>
-        <MainDash heading = {heading} setheading={setheading}/>
+        <Routes>
+        <Route path="/" element={<MainDash/>} />
+        <Route path="/1" element={<MainDash/>} />
+        <Route path="/4" element={<Screen9/>} />
+        </Routes>
       </div>
     </div>
+    </BrowserRouter>
   );
 }
 
