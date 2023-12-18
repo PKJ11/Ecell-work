@@ -17,9 +17,37 @@ const Home = () => {
     : { right: 0 };
   return (
     <div className="AppGlass">
-        <Sidebar/>
-        <MainDash/>
-        {/* <RightSide/> */}
+      <Sidebar />
+      <MainDash />
+      <div style={{ position: "relative" }}>
+        <div style={{ position: "relative" }}>
+          <button
+            style={{
+              position: "fixed",
+              top: 0,
+              ...buttonPosition,
+              // margin: "10px",
+              padding: "10px",
+              width: "77px",
+              height: "286px",
+              cursor: "pointer",
+              background: "#23B4FF",
+              transition: "right 0.3s ease",
+            }}
+            onClick={toggleCalendar}
+            className="grid"
+          >
+            <span>C</span>
+            <span>A</span>
+            <span>L</span>
+            <span>E</span>
+            <span>N</span>
+            <span>D</span>
+            <span>A</span>
+            <span>R</span>
+          </button>
+          {isCalendarVisible && <RightSide />}
+        </div>
       </div>
     </div>
   );

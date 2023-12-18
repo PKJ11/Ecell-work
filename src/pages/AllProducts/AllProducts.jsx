@@ -17,6 +17,9 @@ import RightSide from "../../components/RigtSide/RightSide";
 const AllProducts = () => {
   const [isCalendarVisible, setCalendarVisible] = useState(false);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dd98aa6bad3bb2eab9cc99ac346c1e94c64c6f1a
 
   const toggleCalendar = () => {
     setCalendarVisible(!isCalendarVisible);
@@ -142,6 +145,7 @@ const AllProducts = () => {
 };
 
 export default AllProducts;
+<<<<<<< HEAD
 
 =======
 
@@ -269,4 +273,6 @@ export default AllProducts;
 };
 
 export default AllProducts;
+>>>>>>> dd98aa6bad3bb2eab9cc99ac346c1e94c64c6f1a
+=======
 >>>>>>> dd98aa6bad3bb2eab9cc99ac346c1e94c64c6f1a
