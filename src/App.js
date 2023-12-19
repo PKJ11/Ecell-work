@@ -6,6 +6,8 @@ import AllUsers from "./pages/AllUsers/AllUsers";
 import Advertising from "./pages/Advertising/Advertising";
 import ContentMarketing from "./pages/ContentMarketing/ContentMarketing";
 import EmployementNews from "./pages/EmploymentNews/EmployementNews";
+import SEO from "./pages/SEO/seo";
+import Emailmarketing from "./pages/Emailnmarketing/Emailmarketing";
 import Budget from "./pages/Budget/Budget";
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
           <Route path="/AllProducts" element={<AllProducts />} />
           <Route path="/AllUsers" element={<AllUsers />} />
           <Route path="/Advertising" element={<Advertising />} />
+          <Route path="/seoprototype" element={<SEO />} />
           <Route path="/ContentMarketing" element={<ContentMarketing />} />
+          <Route path="/emailmarketing" element={<Emailmarketing />} />
           <Route path="/EmployementNews" element={<EmployementNews />} />
           <Route path="/Budget" element={<Budget/>}/>
         </Routes>
