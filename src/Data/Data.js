@@ -42,12 +42,12 @@ export const SidebarData = [
   {
     icon: UilChart,
     heading: 'SEO Prototype',
-    navigate: "/"
+    navigate: "/seoprototype"
   },
   {
     icon: UilChart,
     heading: 'E-Mail Marketing',
-    navigate: "/"
+    navigate: "/emailmarketing"
   }, 
   {
     icon: UilChart,
@@ -69,6 +69,24 @@ export const SidebarData = [
     heading: 'Employement News ',
     navigate: "/EmployementNews"
   },
+];
+
+export const emailMaarketing = [
+ {
+  heading:"Templates"
+ },
+ {
+  heading:"Integration"
+ },
+ {
+  heading:"Database"
+ },
+ {
+  heading:"CTA"
+ },
+ {
+  heading:"Report"
+ }
 ];
 
 // Analytics Cards Data

@@ -2,7 +2,7 @@ import React from "react";
 import RightSide from "./RigtSide/RightSide";
 import { useState } from "react";
 import { findAllByText } from "@testing-library/react";
-import "./Calendar.css";
+import"./Calendar.css";
 
 const Calender = () => {
   const [isCalendarVisible, setCalendarVisible] = useState(false);
