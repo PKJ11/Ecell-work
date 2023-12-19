@@ -4,60 +4,61 @@ import Logo from "../imgs/logo.png";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({heading,setheading}) => {
   const [selected, setSelected] = useState(0);
-  const [expanded, setExpaned] = useState(true);
-  const navigate = useNavigate();
+
+  const [expanded, setExpaned] = useState(true)
+
   const sidebarVariants = {
     true: {
-      left: '0'
+      left : '0'
     },
-    false: {
-      left: '-60%'
+    false:{
+      left : '-60%'
     }
   }
   console.log(window.innerWidth)
   return (
     <>
-      <div className="bars" style={expanded ? { left: '60%' } : { left: '5%' }} onClick={() => setExpaned(!expanded)}>
+      <div className="bars" style={expanded?{left: '60%'}:{left: '5%'}} onClick={()=>setExpaned(!expanded)}>
         <UilBars />
       </div>
-      <motion.div className='sidebar'
-        variants={sidebarVariants}
-        animate={window.innerWidth <= 768 ? `${expanded}` : ''}
-      >
-        {/* logo */}
-        <div className="logo">
-          <span>
-            DPD Marketing and Analytics Tool
-          </span>
-        </div>
+    <motion.div className='sidebar'
+    variants={sidebarVariants}
+    animate={window.innerWidth<=768?`${expanded}`:''}
+    >
+      {/* logo */}
+      <div className="logo">
+        <span>
+          DPD Marketing and Analytics Tool
+        </span>
+      </div>
 
-        <div className="menu">
-          {SidebarData.map((item, index) => (
+      <div className="menu">
+        {SidebarData.map((item, index) => {
+          return (
             <div
-              className={selected === index ? 'menuItem active' : 'menuItem'}
+              className={selected === index ? "menuItem active" : "menuItem"}
               key={index}
-
-              onClick={() => {
-                const navigatelink = `${item.navigate}`
-                navigate('/')
-                navigate(navigatelink) ;
-                console.log(navigatelink);
-                setSelected(index); 
+              onClick={() =>{
+                setheading(SidebarData[index].heading);
+                setSelected(index);
               }}
-            >
-              <item.icon className={selected === index ? 'icon' : ''} />
-              <span className={selected === index ? 'text' : ''}>{item.heading}</span>
+            ><Link to={`/${index+1}`} style={{textDecoration:"none",color:"inherit"}}>
+            <item.icon className={selected === index ? "icon" : ""} style={{padding:"0px 4px"}} />
+            <span className={selected === index ? "text" : ""} >{item.heading}</span>
+            </Link>
             </div>
-          ))}
-          <div className="menuItem">
-            {/* signoutcode */}
-          </div>
+          );
+        })}
+       
+        <div className="menuItem">
+         {/* signoutcode */}
         </div>
-      </motion.div>
+      </div>
+    </motion.div>
     </>
   );
 };

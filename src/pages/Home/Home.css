@@ -9,8 +9,8 @@
   align-items: center;
 }
 
-.hContainer {
-  /* width: 80vw; */
+.home-container {
+  display: flex;
 }
 
 .right-side-container {

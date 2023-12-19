@@ -4,27 +4,53 @@ import MainDash from "../../components/MainDash/MainDash";
 import RightSide from "../../components/RigtSide/RightSide";
 import { useState } from "react";
 import "./Home.css";
-import Calender from "../../components/Calender";
 
 const Home = () => {
+  const [isCalendarVisible, setCalendarVisible] = useState(false);
+
+  const toggleCalendar = () => {
+    setCalendarVisible(!isCalendarVisible);
+  };
+
+  const buttonPosition = isCalendarVisible
+    ? { right: window.innerWidth - 1215 } // Adjust the value based on your calendar component width
+    : { right: 0 };
   return (
     <div className="AppGlass">
       <Sidebar />
-      <div className="EnWrapper" style={{ backgroundColor: 'rgb(0,0,0,0.1)', overflowX: 'hidden' }}>
-        <MainDash heading="Home" />
-
-        {/* White div with Real-Time Statistical View */}
-        <div style={{ backgroundColor: '#fff', padding: '20px', borderRadius: '5px', marginTop: '20px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', margin: '0 20px', height: '70px' }}>
-          <h2>Real-Time Statistical View</h2>
-          {/* Add your statistical content here */}
+      <MainDash />
+      <div style={{ position: "relative" }}>
+        <div style={{ position: "relative" }}>
+          <button
+            style={{
+              position: "fixed",
+              top: 0,
+              ...buttonPosition,
+              // margin: "10px",
+              padding: "10px",
+              width: "77px",
+              height: "286px",
+              cursor: "pointer",
+              background: "#23B4FF",
+              transition: "right 0.3s ease",
+            }}
+            onClick={toggleCalendar}
+            className="grid"
+          >
+            <span>C</span>
+            <span>A</span>
+            <span>L</span>
+            <span>E</span>
+            <span>N</span>
+            <span>D</span>
+            <span>A</span>
+            <span>R</span>
+          </button>
+          {isCalendarVisible && <RightSide />}
         </div>
-        <Calender />
       </div>
-      
     </div>
   );
 };
 
 export default Home;
-
-
