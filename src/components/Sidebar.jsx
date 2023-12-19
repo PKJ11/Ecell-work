@@ -42,9 +42,18 @@ const Sidebar = ({heading,setheading}) => {
             <div
               className={selected === index ? "menuItem active" : "menuItem"}
               key={index}
+<<<<<<< HEAD
               onClick={() =>{
                 setheading(SidebarData[index].heading);
                 setSelected(index);
+=======
+
+              onClick={() => {
+                const navigatelink = `${item.navigate}`
+                navigate('/')
+                navigate(navigatelink) ;
+                console.log(navigatelink); 
+>>>>>>> c8738f8a751eda05317e389ca4bf1f8a9c76fee2
               }}
             ><Link to={`/${index+1}`} style={{textDecoration:"none",color:"inherit"}}>
             <item.icon className={selected === index ? "icon" : ""} style={{padding:"0px 4px"}} />

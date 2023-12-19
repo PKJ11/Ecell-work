@@ -37,7 +37,12 @@ export const SidebarData = [
   },
   {
     icon: UilChart,
+<<<<<<< HEAD
     heading: 'SEO Prototype'
+=======
+    heading: 'SEO Prototype',
+    navigate: "/"
+>>>>>>> c8738f8a751eda05317e389ca4bf1f8a9c76fee2
   },
   {
     icon: UilChart,

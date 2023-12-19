@@ -8,28 +8,31 @@ function RightSide() {
   return (
     <div className="app">
       <div className="calendar-container">
-        <Calendar onChange={setDate} value={date} />
-      </div>
-      <div className="background flex">
         <div>
-          <input type="checkbox" />
-          <label>Day 1</label>
+          <Calendar onChange={setDate} value={date} />
         </div>
-        <div>
-          <input type="checkbox" />
-          <label>Day 2</label>
-        </div>
-        <div>
-          <input type="checkbox" />
-          <label>Day 3</label>
-        </div>
-        <div>
-          <input type="checkbox" />
-          <label>Day 4</label>
-        </div>
-        <div>
-          <input type="checkbox" />
-          <label>Day 5</label>
+
+        <div className="background flex">
+          <div>
+            <input type="checkbox" />
+            <label>Day 1</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>Day 2</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>Day 3</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>Day 4</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>Day 5</label>
+          </div>
         </div>
       </div>
     </div>
