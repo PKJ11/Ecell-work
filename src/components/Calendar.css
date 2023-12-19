@@ -1,0 +1,19 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 1rem;
+  font-size: 30px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  display: flex;
+}
+
+.right-side-container {
+  position: relative;
+  flex: 1;
+}

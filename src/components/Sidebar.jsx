@@ -45,8 +45,7 @@ const Sidebar = () => {
                 const navigatelink = `${item.navigate}`
                 navigate('/')
                 navigate(navigatelink) ;
-                console.log(navigatelink);
-                setSelected(index); 
+                console.log(navigatelink); 
               }}
             >
               <item.icon className={selected === index ? 'icon' : ''} />

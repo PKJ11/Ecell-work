@@ -42,7 +42,7 @@ export const SidebarData = [
   {
     icon: UilChart,
     heading: 'SEO Prototype',
-    navigate: "/SEO Prototype"
+    navigate: "/"
   },
   {
     icon: UilChart,
