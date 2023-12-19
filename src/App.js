@@ -9,6 +9,8 @@ import EmployementNews from "./pages/EmploymentNews/EmployementNews";
 import SEO from "./pages/SEO/seo";
 import Emailmarketing from "./pages/Emailnmarketing/Emailmarketing";
 import Budget from "./pages/Budget/Budget";
+import Advertisement from "./pages/Advertisement/Advertisement";
+import EcomMag from "./pages/EcomMag/EcomMag";
 function App() {
   return (
     <div className="App">
@@ -17,7 +19,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/AllProducts" element={<AllProducts />} />
           <Route path="/AllUsers" element={<AllUsers />} />
-          <Route path="/Advertising" element={<Advertising />} />
+          {/* <Route path="/Advertising" element={<Advertising />} /> */}
+          <Route path="/Advertising" element={<Advertisement />} />
+          <Route path="/Ecom" element={<EcomMag />} />
           <Route path="/seoprototype" element={<SEO />} />
           <Route path="/ContentMarketing" element={<ContentMarketing />} />
           <Route path="/emailmarketing" element={<Emailmarketing />} />

@@ -3,7 +3,7 @@ import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 
 export default function App(props) {
   return (
-    <div className='TableContainer' style={{ width: '85%',margin: '20px 0', border: 'none', padding: '20px',backgroundColor:'white' }}>
+    <div className='TableContainer' style={{ width: '85%',margin: '20px 0', border: 'none', padding: '20px',backgroundColor:'white'}}>
       <MDBTable className='caption-top' style={{ width: '98%', border: 'none' }}>
       <caption style={{ fontWeight: 'bold', fontSize: '20px' }}>{props.heading}</caption>
 

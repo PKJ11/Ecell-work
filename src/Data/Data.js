@@ -52,11 +52,11 @@ export const SidebarData = [
   {
     icon: UilChart,
     heading: 'E-Commerce Manager',
-    navigate: "/"
+    navigate: "/Ecom"
   }, 
   {
     icon: UilChart,
-    heading: 'Advertising',
+    heading: 'Advertisement',
     navigate: "/Advertising"
   }, 
   {
