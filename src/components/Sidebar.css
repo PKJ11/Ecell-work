@@ -20,6 +20,7 @@
   align-items:flex-end;
   height: 4%;
   color:#23B4FF;
+  font-size: 20px;
 }
 
 /* menu */
@@ -28,8 +29,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  height: 87%;
-  overflow-y: auto;
 }
 .menuItem {
   display: flex;
@@ -40,7 +39,7 @@
   margin-left: 1rem;
   position: relative;
   transition: all 300ms ease;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .menuItem:hover {
@@ -62,9 +61,8 @@
 }
 
 .active {
-  background: rgba(211, 208, 208, 0.47);
+  background: rgba(186, 186, 186, 0.47);
   margin-left: 0;
-  padding:30px 2px
 }
 .active::before {
   content: "";
@@ -87,7 +85,7 @@
   .sidebar{
     position: fixed;
     z-index: 9;
-    background: #3F4866;
+    background: #ffe0e0;
     width: 55%;
     padding-right: 1rem;
     height: 100%;
@@ -105,7 +103,9 @@
   .bars{
     display: flex;
     position: fixed;
-    background:#3F4866;
+    top: 2rem;
+    left:60%;
+    background:#ffe0e0;
     padding:10px;
     border-radius: 10px;
     z-index: 9;

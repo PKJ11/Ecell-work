@@ -22,57 +22,53 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Home",
+    navigate: "/"
   },
   {
     icon: UilClipboardAlt,
     heading: "All Products",
+    navigate: "/AllProducts"
   },
   {
     icon: UilUsersAlt,
     heading: "All Users",
+    navigate: "/AllUsers"
   },
   {
     icon: UilPackage,
-    heading: 'Budget and Prioritization'
+    heading: 'Budget and Prioritization',
+    navigate: "/"
   },
   {
     icon: UilChart,
-    heading: 'SEO Prototype'
+    heading: 'SEO Prototype',
+    navigate: "/SEO Prototype"
   },
   {
     icon: UilChart,
-    heading: 'E-Mail Marketing'
+    heading: 'E-Mail Marketing',
+    navigate: "/"
   }, 
   {
     icon: UilChart,
-    heading: 'E-Commerce Manager'
+    heading: 'E-Commerce Manager',
+    navigate: "/"
   }, 
   {
     icon: UilChart,
-    heading: 'Advertising'
+    heading: 'Advertising',
+    navigate: "/Advertising"
   }, 
   {
     icon: UilChart,
-    heading: 'Content Marketing'
-  },
-];
-
-export const emailMaarketing = [
-  {
-    heading:"Templates"
+    heading: 'Content Marketing',
+    navigate: "/ContentMarketing"
   },
   {
-    heading:"Integrations"
+    icon: UilChart,
+    heading: 'Employement News ',
+    navigate: "/EmployementNews"
   },
-  {
-    heading:"Database"
-  },
-  {
-    heading:"CTA"
-  },
-  {
-    heading:"Report"
-  }
 ];
 
 // Analytics Cards Data
