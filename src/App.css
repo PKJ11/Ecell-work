@@ -34,7 +34,7 @@
   background: var(--glass);
   padding: auto;
   grid-template-columns: 11rem auto 20rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @media screen and (max-width: 1200px) {

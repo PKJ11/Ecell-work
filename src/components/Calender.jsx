@@ -16,19 +16,21 @@ const Calender = () => {
     : { right: 0 };
   return (
     <div style={{ position: "relative" }}>
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "absolute" }}>
           <button
             style={{
               position: "fixed",
               top: 0,
               ...buttonPosition,
               // margin: "10px",
+              marginTop:"3.25%",
               padding: "10px",
               width: "77px",
               height: "fit-content",
               cursor: "pointer",
               background: "#23B4FF",
               transition: "right 0.3s ease",
+              zIndex:"100",
             }}
             onClick={toggleCalendar}
             className="grid"

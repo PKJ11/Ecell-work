@@ -10,9 +10,12 @@
   background-color: #3f4866;
   margin-top: 0;
   color: #fff;
-  height: 6.722%;
   padding-top: 20px;
   padding-left: 40px;
+  width: 100%;
+}
+.navbar h1{
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -28,7 +31,7 @@
   }
 }
 
-.home-head {
+/* .home-head {
   font-size: 30px;
   font-weight: 600;
   color: #3f4866;
@@ -38,5 +41,5 @@
 
 .head {
   margin: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+/* } */

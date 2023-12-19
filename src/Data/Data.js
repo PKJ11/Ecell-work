@@ -64,6 +64,11 @@ export const SidebarData = [
     heading: 'Content Marketing',
     navigate: "/ContentMarketing"
   },
+  {
+    icon: UilChart,
+    heading: 'Employement News ',
+    navigate: "/EmployementNews"
+  },
 ];
 
 // Analytics Cards Data
