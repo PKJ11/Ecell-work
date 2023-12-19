@@ -38,7 +38,7 @@ const EmployementNews = () => {
     <div className='AppGlass'>
       <Sidebar />
       <div className="EnWrapper" style={{ backgroundColor: 'rgb(0,0,0,0.1)',overflowX: 'hidden'}}>
-        <MainDash />
+        <MainDash heading="Employement News"/>
         <div className='TabContainer'>
           <Tabs>
             <TabList
