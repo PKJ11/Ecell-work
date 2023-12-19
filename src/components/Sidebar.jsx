@@ -43,10 +43,8 @@ const Sidebar = () => {
 
               onClick={() => {
                 const navigatelink = `${item.navigate}`
-                navigate('/')
-                navigate(navigatelink) ;
-                console.log(navigatelink);
                 setSelected(index); 
+                navigate(navigatelink) ;
               }}
             >
               <item.icon className={selected === index ? 'icon' : ''} />

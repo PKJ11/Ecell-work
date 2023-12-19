@@ -6,14 +6,16 @@ import { Button } from '@mui/material';
 import Sidebar from '../../components/Sidebar';
 import MainDash from '../../components/MainDash/MainDash';
 import Calender from "../../components/Calender.jsx";
+import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
+
 
 const Emailmarketing = () => {
  
     const [selected, setSelected] = useState(0);
 
     return (
-       <div className='AppGlass'>
-        <div> <Sidebar/></div>
+       <div className='AppGlass' style={{gridTemplateColumns:"11rem auto 0rem"}}>
+        <Sidebar/>
         <div>
         <MainDash heading="EMail Marketing" />
         <div className='header'>
@@ -70,6 +72,44 @@ const Emailmarketing = () => {
       {
         selected === 2 && (
            <div>
+            
+             <div>
+             <div style={{marginBottom:"40px",marginTop:"20px",marginLeft:"40px"}}>
+<MDBTable className='caption-top' style={{ width: '83%', border: 'none' }}>
+<caption style={{ fontWeight: 'bold', fontSize: '20px' }}>Database</caption>
+
+<MDBTableHead>
+  <tr>
+    <th scope='col' style={{ backgroundColor: 'rgba(35, 180, 255)', color: '#fff' }}>Name</th>
+    <th scope='col' style={{ backgroundColor: 'rgba(35, 180, 255)', color: '#fff' }}>Email id's</th>
+    <th scope='col' style={{ backgroundColor: 'rgba(35, 180, 255)', color: '#fff' }}>Other Parameter from segmentation</th>
+  </tr>
+</MDBTableHead>
+<MDBTableBody>
+  <tr style={{ borderBottom: 'none' }}>
+    <th scope='row' style={{ borderBottom: 'none' }}>User1</th>
+    <td style={{ borderBottom: 'none' }}></td>
+    <td style={{ borderBottom: 'none' }}></td>
+    <td style={{ borderBottom: 'none' }}></td>
+  </tr>
+  <tr style={{ borderBottom: 'none' }}>
+    <th scope='row' style={{ backgroundColor: 'rgba(35, 180, 255, 0.5)', borderBottom: 'none' }}>User3</th>
+    <td style={{ backgroundColor: 'rgba(35, 180, 255, 0.5)', borderBottom: 'none' }}></td>
+    <td style={{ backgroundColor: 'rgba(35, 180, 255, 0.5)', borderBottom: 'none' }}></td>
+    <td style={{ backgroundColor: 'rgba(35, 180, 255, 0.5)', borderBottom: 'none' }}></td>
+  </tr>
+  <tr style={{ borderBottom: 'none' }}>
+    <th scope='row' style={{ borderBottom: 'none' }}>User2</th>
+    <td style={{ borderBottom: 'none' }}></td>
+    <td style={{ borderBottom: 'none' }}></td>
+    <td style={{ borderBottom: 'none' }}></td>
+  </tr>
+
+</MDBTableBody>
+</MDBTable>
+</div>
+             </div>   
+
             <div className='display2'>
                 <h2>Data Extraction</h2>
                <p></p>  
