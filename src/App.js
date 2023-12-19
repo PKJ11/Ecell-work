@@ -6,6 +6,7 @@ import AllUsers from "./pages/AllUsers/AllUsers";
 import Advertising from "./pages/Advertising/Advertising";
 import ContentMarketing from "./pages/ContentMarketing/ContentMarketing";
 import EmployementNews from "./pages/EmploymentNews/EmployementNews";
+import Budget from "./pages/Budget/Budget";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Advertising" element={<Advertising />} />
           <Route path="/ContentMarketing" element={<ContentMarketing />} />
           <Route path="/EmployementNews" element={<EmployementNews />} />
+          <Route path="/Budget" element={<Budget/>}/>
         </Routes>
       </BrowserRouter>
     </div>

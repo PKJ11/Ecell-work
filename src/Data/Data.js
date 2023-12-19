@@ -37,7 +37,7 @@ export const SidebarData = [
   {
     icon: UilPackage,
     heading: 'Budget and Prioritization',
-    navigate: "/"
+    navigate: "/Budget"
   },
   {
     icon: UilChart,
