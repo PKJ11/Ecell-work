@@ -7,6 +7,7 @@ import 'react-tabs/style/react-tabs.css';
 import "./EN.css"
 import Table2 from "../../components/Table2/Table2"
 import Table3 from '../../components/table3';
+import ENTabContent3 from '../../components/ENTabContent3';
 
 const EmployementNews = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -78,7 +79,7 @@ const EmployementNews = () => {
               <Table3 heading={selectedTabText}/>
             </TabPanel>
             <TabPanel>
-              
+              <ENTabContent3/>
             </TabPanel>
           </Tabs>
         </div>
