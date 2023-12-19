@@ -22,56 +22,71 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Home",
+    navigate: "/"
   },
   {
     icon: UilClipboardAlt,
     heading: "All Products",
+    navigate: "/AllProducts"
   },
   {
     icon: UilUsersAlt,
     heading: "All Users",
+    navigate: "/AllUsers"
   },
   {
     icon: UilPackage,
-    heading: 'Budget and Prioritization'
-  },
-  {
-    icon: UilChart,
-<<<<<<< HEAD
-    heading: 'SEO Prototype'
-=======
-    heading: 'SEO Prototype',
+    heading: 'Budget and Prioritization',
     navigate: "/"
->>>>>>> c8738f8a751eda05317e389ca4bf1f8a9c76fee2
   },
   {
     icon: UilChart,
-    heading: 'E-Mail Marketing'
-  }, 
-  {
-    icon: UilChart,
-    heading: 'E-Commerce Manager'
-  }, 
-  {
-    icon: UilChart,
-    heading: 'Advertising'
-  }, 
-  {
-    icon: UilChart,
-    heading: 'Content Marketing'
+    heading: 'SEO Prototype',
+    navigate: "/SEO Prototype"
   },
   {
     icon: UilChart,
-    heading: 'Employment News'
+    heading: 'E-Mail Marketing',
+    navigate: "/E-Mail Marketing"
   }, 
   {
     icon: UilChart,
-    heading: 'DPD Journal Sales'
+    heading: 'E-Commerce Manager',
+    navigate: "/"
   }, 
   {
     icon: UilChart,
-    heading: 'Connectors'
+    heading: 'Advertising',
+    navigate: "/Advertising"
+  }, 
+  {
+    icon: UilChart,
+    heading: 'Content Marketing',
+    navigate: "/ContentMarketing"
   },
+  {
+    icon: UilChart,
+    heading: 'Employement News ',
+    navigate: "/EmployementNews"
+  },
+];
+
+export const emailMaarketing = [
+  {
+    heading:"Templates"
+  },
+  {
+    heading:"Integrations"
+  },
+  {
+    heading:"Database"
+  },
+  {
+    heading:"CTA"
+  },
+  {
+    heading:"Report"
+  }
 ];
 
 // Analytics Cards Data

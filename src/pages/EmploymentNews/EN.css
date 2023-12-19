@@ -1,0 +1,17 @@
+.EnWrapper{
+    /* height: 100vh; */
+    overflow: hidden;
+    width: 87.5vw;
+}
+.TabContainer{
+    padding: 3% 5%;
+}
+
+element.style {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+.react-tabs__tab-list{
+    border-bottom:0 solid ; 
+}

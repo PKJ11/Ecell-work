@@ -20,6 +20,7 @@
   align-items:flex-end;
   height: 4%;
   color:#23B4FF;
+  font-size: 20px;
 }
 
 /* menu */
@@ -28,8 +29,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  height: 67%;
-  overflow-y: auto;
 }
 .menuItem {
   display: flex;
@@ -64,7 +63,6 @@
 .active {
   background: rgba(186, 186, 186, 0.47);
   margin-left: 0;
-  padding:10px 2px
 }
 .active::before {
   content: "";

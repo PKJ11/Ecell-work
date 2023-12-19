@@ -2,16 +2,9 @@
   display: flex;
   flex-direction: column;
   /* padding-top: 1rem; */
-  /* width: 95%; */
+  width: 95%;
   justify-content: space-evenly;
-}
-
-.calendar-container {
-  position: fixed;
-  top: 0; /* You can adjust this value based on your layout */
-  right: 0;
-  /* margin: 1rem; Add margin for better spacing */
-  z-index: 101; /* Ensure the calendar is above other elements */
+  z-index: 100;
 }
 
 @media screen and (max-width: 1200px) {
@@ -23,7 +16,7 @@
 
 @media screen and (max-width: 768px) {
   .RightSide {
-    /* width: 100%; */
+    width: 100%;
     margin-top: 0;
   }
   .RightSide > div {
@@ -34,12 +27,8 @@
 }
 
 .react-calendar {
-  width: 350px;
-<<<<<<< HEAD
+  /* width: 350px; */
   max-width: 100%;
-=======
-  /* max-width: 100%; */
->>>>>>> c8738f8a751eda05317e389ca4bf1f8a9c76fee2
   color: #ffffff;
   background: #19203b;
   /* border: 1px solid #a0a096; */
@@ -78,8 +67,8 @@
 }
 
 /* .react-calendar button:enabled:hover {
-  cursor: pointer;
-} */
+    cursor: pointer;
+  } */
 
 .react-calendar__navigation {
   display: flex;
@@ -151,9 +140,9 @@
 }
 
 /* .react-calendar__tile:enabled:hover,
-.react-calendar__tile:enabled:focus {
-  background-color: #e6e6e6;
-} */
+  .react-calendar__tile:enabled:focus {
+    background-color: #e6e6e6;
+  } */
 
 .react-calendar__tile--now {
   background: #ffff76;
@@ -188,17 +177,10 @@
 }
 
 .background {
-  /* background-color: #19203b; */
+  background-color: #19203b;
   height: 100vh;
-  /* width: 100%; */
+  width: 100%;
   display: flex;
-  width: 350px;
-  /* max-width: 100%; */
-  color: #ffffff;
-  background: #19203b;
-  /* border: 1px solid #a0a096; */
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.125em;
 }
 
 .flex {
