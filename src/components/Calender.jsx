@@ -12,7 +12,7 @@ const Calender = () => {
   };
 
   const buttonPosition = isCalendarVisible
-    ? { right: window.innerWidth - 1215 } // Adjust the value based on your calendar component width
+    ? { right: window.innerWidth - 1180 } 
     : { right: 0 };
   return (
     <div style={{ position: "relative" }}>
@@ -22,8 +22,6 @@ const Calender = () => {
             position: "fixed",
             top: 0,
             ...buttonPosition,
-            // margin: "10px",
-            // marginTop: "3.25%",
             padding: "10px",
             width: "77px",
             height: "fit-content",
