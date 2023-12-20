@@ -26,7 +26,7 @@ function App() {
           <Route path="/ContentMarketing" element={<ContentMarketing />} />
           <Route path="/emailmarketing" element={<Emailmarketing />} />
           <Route path="/EmployementNews" element={<EmployementNews />} />
-          <Route path="/Budget" element={<Budget/>}/>
+          {/* <Route path="/Budget" element={<Budget/>}/> */}
         </Routes>
       </BrowserRouter>
     </div>

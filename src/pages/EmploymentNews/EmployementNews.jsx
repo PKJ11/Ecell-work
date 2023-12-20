@@ -8,6 +8,7 @@ import "./EN.css"
 import Table2 from "../../components/Table2/Table2"
 import Table3 from '../../components/table3';
 import ENTabContent3 from '../../components/ENTabContent3';
+import img1 from "../../imgs/Ecom_ad.jpg"
 
 const EmployementNews = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -61,18 +62,27 @@ const EmployementNews = () => {
             </TabList>
 
             <TabPanel>
-              <Table2 heading={selectedTabText} />
-              <div className='TableContainer' style={{ width: '85%', margin: '20px 0', border: 'none', boxShadow: '0 4px 8px rgba(0.1, 0.1, 0.1, 0.1)', padding: '20px' , backgroundColor:'white'}}>
-                <caption style={{ fontWeight: 'bold', fontSize: '20px' , width: '300px'}}>Promotion Campaings</caption>
+            <div style={{ backgroundColor: 'white', width: '95%', margin: 'auto', height: '400px' }}>
+                                <img
+                                    src={img1}  // Replace with your image URL
+                                    alt="Your Image Alt Text"
+                                    style={{ width: '95%', display: 'block', margin: 'auto', height: '90%' }}
+                                />
+                            </div>
+                            <div className='TableContainer' style={{ width: '85%', margin: '20px 0', border: 'none', padding: '20px' }}>
+                                <caption style={{ fontWeight: 'bold', fontSize: '20px', width: '300px' }}>Kindle</caption>
 
-                <div style={{ display: 'grid', gridTemplateRows: 'repeat(2, 1fr)', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px', padding: '20px', borderRadius: '5px' }}>
-                  {/* Your content for the grid goes here */}
-                  <div style={{ backgroundColor: '#23B4FF', padding: '20px', borderRadius: '5px' }}>Grid Item 1</div>
-                  <div style={{ backgroundColor: '#23B4FF', padding: '20px', borderRadius: '5px' }}>Grid Item 2</div>
-                  <div style={{ backgroundColor: '#23B4FF', padding: '20px', borderRadius: '5px' }}>Grid Item 3</div>
-                  <div style={{ backgroundColor: '#23B4FF', padding: '20px', borderRadius: '5px' }}>Grid Item 4</div>
-                </div>
-              </div>
+                                <div style={{ display: 'grid', gridTemplateRows: 'repeat(2, 1fr)', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', padding: '20px', borderRadius: '5px' }}>
+
+                                    <button style={{ backgroundColor: 'rgb(35, 180, 255)', color: 'white', border: 'none', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', padding: '10px 20px' }}>
+                                        Add Accounts
+                                    </button>
+                                    <button style={{ backgroundColor: 'rgb(35, 180, 255)', color: 'white', border: 'none', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', padding: '10px 20px' }}>
+                                        Configure
+                                    </button>
+
+                                </div>
+                                </div>
 
             </TabPanel>
             <TabPanel>
