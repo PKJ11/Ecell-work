@@ -50,11 +50,11 @@ const EmployementNews = () => {
                 borderBottom: 'none', // Remove bottom border
               }}
             >
-              <Tab style={getTabStyle(0)} onClick={() => handleTabClick(0, "Subscribers")}>
-                Subscribers
+              <Tab style={getTabStyle(0)} onClick={() => handleTabClick(0, "Advertisements and Promotions")}>
+              Advertisements and Promotions
               </Tab>
-              <Tab style={getTabStyle(1)} onClick={() => handleTabClick(1, "Advertisements and Promotions")}>
-                Advertisements and Promotions
+              <Tab style={getTabStyle(1)} onClick={() => handleTabClick(1, "Subscribers")}>
+                Subscribers
               </Tab>
               <Tab style={getTabStyle(2)} onClick={() => handleTabClick(2, "Notifications")}>
                 Notifications
